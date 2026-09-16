@@ -1,0 +1,72 @@
+{
+  "name": "The Ledger",
+  "dataColors": [
+    "#C9A227",
+    "#B5654A",
+    "#8891A3",
+    "#7FA88B",
+    "#EDE7DA",
+    "#8A7433",
+    "#C77558",
+    "#9BA3B5"
+  ],
+  "background": "#10141F",
+  "foreground": "#EDE7DA",
+  "tableAccent": "#C9A227",
+  "good": "#7FA88B",
+  "neutral": "#8891A3",
+  "bad": "#B5654A",
+  "maximum": "#C9A227",
+  "center": "#8891A3",
+  "minimum": "#171C2A",
+  "null": "#2B3145",
+  "textClasses": {
+    "callout": { "fontSize": 40, "fontFace": "Georgia", "color": "#EDE7DA" },
+    "title": { "fontSize": 13, "fontFace": "Segoe UI Semibold", "color": "#C9A227" },
+    "header": { "fontSize": 12, "fontFace": "Segoe UI", "color": "#A9A79C" },
+    "label": { "fontSize": 10, "fontFace": "Segoe UI", "color": "#A9A79C" }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#171C2A" } }, "transparency": 0 }],
+        "border": [{ "show": true, "color": { "solid": { "color": "#2B3145" } }, "radius": 12 }],
+        "dropShadow": [{
+          "show": true,
+          "color": { "solid": { "color": "#000000" } },
+          "transparency": 60,
+          "position": "Outer",
+          "shadowBlur": 30,
+          "shadowDistance": 10,
+          "shadowSpread": -6,
+          "preset": "Custom"
+        }],
+        "visualHeader": [{
+          "show": true,
+          "background": { "solid": { "color": "#171C2A" } },
+          "foreground": { "solid": { "color": "#C9A227" } },
+          "transparency": 0
+        }],
+        "title": [{
+          "show": true,
+          "fontColor": { "solid": { "color": "#C9A227" } },
+          "background": { "solid": { "color": "#171C2A" } },
+          "alignment": "left",
+          "fontSize": 12,
+          "fontFamily": "Segoe UI Semibold"
+        }]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#10141F" } }, "transparency": 0 }]
+      }
+    },
+    "card": {
+      "*": {
+        "labels": [{ "color": { "solid": { "color": "#EDE7DA" } }, "fontSize": 32, "fontFamily": "Georgia" }],
+        "categoryLabels": [{ "color": { "solid": { "color": "#A9A79C" } }, "fontSize": 11, "fontFamily": "Segoe UI" }]
+      }
+    }
+  }
+}
