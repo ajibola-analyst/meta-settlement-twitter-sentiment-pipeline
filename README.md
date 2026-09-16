@@ -1,4 +1,4 @@
-# Meta $16.7B Settlement Social Sentiment & BI Dashboard
+# Meta $16.7B Settlement Twitter Sentiment & Extraction Pipeline
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python&logoColor=white)
 ![Twitter/X](https://img.shields.io/badge/Data%20Source-Twitter%20(X)-000000?style=for-the-badge&logo=x&logoColor=white)
@@ -45,12 +45,11 @@ This project demonstrates a complete, real-world data skill set: extracting live
 polymarket-meta-settlement-sentiment-bi/
 │
 ├── data/
-│   ├── raw_polymarket_comments.json       # Raw extracted commentary payload (sourced from Twitter/X)
+│   ├── polymarket_safe_extraction.csv       # Raw extracted commentary payload (sourced from Twitter/X)
 │   └── polymarket_sentiment_scored.csv    # Enriched dataset with sentiment scores (250 rows)
 │
-├── scripts/
-│   ├── scraper.py                          # Twitter/X and web scraping automation with human-scroll logic
-│   └── nlp_processor.py                    # Sentiment scoring and text normalization
+├── scripts/                       
+│   └── twitter_extraction.ipynb                  # Twitter/X and web scraping automation with human-scroll logic + Sentiment scoring and text normalization
 │
 ├── dashboard/
 │   ├── meta_settlement_ledger.pbix        # Power BI master file (data model and canvas)
@@ -191,8 +190,8 @@ The visual layer follows strict design principles optimized for executive consum
  │ Total Comments│  Peak Hour Volume      │  Net Sentiment        │  Figure Mentions ($)   │
  │     250       │  42 (Aug 26, 16:00)    │     -18.4%            │         38             │
  ├───────────────┴────────────────────────┴───────┬───────────────────────────────────────┤
- │ TIMELINE (Area Chart)                          │ KEYWORD TREEMAP / WORD CLOUD           │
- │ Hourly Sentiment Volume Distribution            │ Frequency breakdown (Money, States)    │
+ │ TIMELINE (Area Chart)                          │ KEYWORD TREEMAP                       │
+ │ Hourly Sentiment Volume Distribution            │ Frequency breakdown                  │
  ├────────────────────────────────────────────────┼───────────────────────────────────────┤
  │ NOTABLE VOICES (Table Visual)                  │ TOP THEMES (Horizontal Bar Chart)      │
  │ Rotating Top 4 Comments with Alert Formatting  │ Frequency rank across top clean terms  │
@@ -278,6 +277,6 @@ This project was built to reflect a real, hands-on skill set that goes beyond wo
 
 **Developed by:** Ajibola Ayomide Odeyemi
 
-**Specialization:** Quantitative Analytics, Clinical Data Systems, and Business Intelligence
+**Specialization:** Quantitative Analytics, Data Systems, and Business Intelligence
 
 **Data Source:** Live public commentary extracted from a Polymarket-related discussion thread on Twitter (X)
