@@ -228,8 +228,8 @@ The visual layer follows strict design principles optimized for executive consum
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/your-username/polymarket-meta-settlement-sentiment-bi.git
-cd polymarket-meta-settlement-sentiment-bi
+git clone https://github.com/ajibola-analyst/meta-settlement-twitter-sentiment-pipeline.git
+cd meta-settlement-twitter-sentiment-pipeline
 ```
 
 ### 2. Environment Setup & Python Execution
